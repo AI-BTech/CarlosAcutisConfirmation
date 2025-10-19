@@ -1,3 +1,18 @@
+/* --- FONT DECLARATIONS --- */
+@font-face {
+    font-family: "NDot";
+    src: url("NDot.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "NType";
+    src: url("NType.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* --- NOTHING OS 4.0 CSS VARIABLES --- */
 :root {
     --color-background-primary: #000000;
