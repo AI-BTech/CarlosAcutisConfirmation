@@ -1,0 +1,24 @@
+body {
+    /* Keep your existing font, color, line-height, padding */
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #e0e0e0;
+    line-height: 1.6;
+    padding: 20px;
+
+    /* New stuff for the background */
+    background-color: #1a1a1a; /* Fallback if animation fails */
+    background-image:
+        linear-gradient(rgba(0, 255, 204, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 255, 204, 0.05) 1px, transparent 1px);
+    background-size: 20px 20px; /* Adjust grid size */
+    animation: background-pan 60s infinite linear; /* Super slow pan */
+}
+
+@keyframes background-pan {
+    from {
+        background-position: 0% 0%;
+    }
+    to {
+        background-position: 100% 100%;
+    }
+}
