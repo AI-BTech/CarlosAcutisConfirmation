@@ -1,24 +1,149 @@
-body {
-    /* Keep your existing font, color, line-height, padding */
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    color: #e0e0e0;
-    line-height: 1.6;
-    padding: 20px;
-
-    /* New stuff for the background */
-    background-color: #1a1a1a; /* Fallback if animation fails */
-    background-image:
-        linear-gradient(rgba(0, 255, 204, 0.05) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(0, 255, 204, 0.05) 1px, transparent 1px);
-    background-size: 20px 20px; /* Adjust grid size */
-    animation: background-pan 60s infinite linear; /* Super slow pan */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-@keyframes background-pan {
-    from {
-        background-position: 0% 0%;
-    }
-    to {
-        background-position: 100% 100%;
-    }
+body {
+    font-family: "NDot", "Inter", "Helvetica Neue", Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #1a1a1a;
+    line-height: 1.5;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    font-family: "NType", Georgia, "Times New Roman", serif;
+    color: #1a1a1a;
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: -0.02em;
+}
+
+h2 {
+    font-family: "NType", Georgia, "Times New Roman", serif;
+    color: #1a1a1a;
+    font-size: 2em;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-family: "NDot", "Inter", sans-serif;
+    color: #555555;
+    font-size: 1.2em;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+h4 {
+    font-family: "NDot", "Inter", sans-serif;
+    color: #333333;
+    font-size: 1em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+p {
+    font-family: "NDot", "Inter", sans-serif;
+    font-size: 1.05em;
+    margin-bottom: 15px;
+    color: #333333;
+    max-width: 700px;
+    text-align: left;
+}
+
+a {
+    color: #3366cc;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+    font-weight: 500;
+}
+
+a:hover {
+    color: #1a4d99;
+    text-decoration: underline;
+}
+
+.FactBox {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    padding: 20px 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    max-width: 700px;
+    width: 100%;
+    text-align: left;
+}
+
+.FactBox h2 {
+    font-family: "NDot", "Inter", sans-serif;
+    color: #1a1a1a;
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.FactBox p {
+    color: #555555;
+    font-size: 1em;
+    margin-bottom: 0;
+}
+
+.Para {
+    margin-top: 30px;
+    padding: 10px 0;
+    max-width: 700px;
+    width: 100%;
+    text-align: left;
+}
+
+.body > h1:first-child {
+    font-size: 1.8em;
+    color: #cc0000;
+    margin-top: 0;
+    margin-bottom: 40px;
+    text-shadow: none;
+    letter-spacing: normal;
+}
+
+body > h2:nth-of-type(1) {
+    font-family: "NDot", "Inter", sans-serif;
+    font-size: 1.1em;
+    color: #777777;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+
+body > h5 {
+    font-family: "NDot", "Inter", monospace;
+    font-size: 0.9em;
+    color: #999999;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+body > h4 {
+    font-family: "NDot", "Inter", sans-serif;
+    color: #444444;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    text-align: center;
+    max-width: 700px;
+}
+
+body > h4 a {
+    font-size: 0.9em;
+    display: block;
+    margin-top: 5px;
 }
