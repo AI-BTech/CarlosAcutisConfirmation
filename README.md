@@ -1,2 +1,2 @@
 > so peak
-   -sudo rm -rf /*
+-sudo rm -rf /*
